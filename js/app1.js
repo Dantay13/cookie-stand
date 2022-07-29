@@ -140,3 +140,16 @@ function getRandomNumber(min, max) {
 // location5.getRandomCustomer(2, 16);
 
 // console.log(location1.getRandomCustomer);
+
+function createLocation(name) {
+    const obj = {};
+    obj.mane = name;
+    obj.getRandomCustomer = function() {
+        return getRandomNumber(this.min, this.max);
+    }, 
+    console.log(getRandomNumber);
+}
+
+const seattle = new Location("seattle")
+seattle.name;
+seattle.getRandomCustomer();
