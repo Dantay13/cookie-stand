@@ -7,36 +7,92 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Locations</h1>
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Column 1</th>
-                <th>Column 2</th>
-                <th>Column 3</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Item: 1</th>
-                <td>Row 1a</td>
-                <td>Row 1b</td>
-                <td>Row 1c</td>
-            </tr>
-            <tr>
-                <th>Item: 2</th>
-                <td>Row 2a</td>
-                <td>Row 2b</td>
-                <td>Row 2c</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>Footer</th>
-                <td>Row 3a</td>
-                <td>Row 3b</td>
-                <td>Row 3c</td>
+    <form id="logForm">
+        <!-- Step 2: Create inputs - HTML -->
+        <!-- name == .property -->
+        <input type="text" name="userText" id=""/>
+        <input type="submit">
+    </form>
+
+
+
+    <br><br>
+    <form id="manyInputs">
+        <label>
+            Text for Input
+            <input type="text" name="" placeholder="What you want user to type"/>
+        </label>
+        <hr>
+        <label>
+            This is a button input
+            <input type="button" value="test" />
+        </label>
+        <hr>
+        <label>
+            Radio button: Option 1
+            <input type="radio" name="idk" value="option1"/>
+        </label>
+        <label>
+            Radio button: Option 2
+            <input type="radio" name="idk" value="option2"/>
+        </label>
+        <label>
+            Radio button: Option 3
+            <input type="radio" name="idk" value="option3"/>
+        </label>
+        <hr>
+        <label>
+            Number input
+            <input type="number"/>
+        </label>
+        <label>
+            Checkbox input?
+            <input type="checkbox" value="test" />
+        </label>
+        <hr>
+        <label>
+            Password input
+            <input type="password" value="test" />
+        </label>
+    </form>
+<br>
+<br>
+<br>
+    <!-- Step 1 -->
+    <form id="foodOrder">
+        <!-- Step 2 -->
+        <legend>Name for Order</legend>
+        <label>
+            Name:
+            <input type="text" name="name" />
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="radio" name="Location" value="seattle" checked>
+            Seattle
+        </label>
+        <label>
+            <input type="radio" name="Location" value="Tokyo">
+            Tokyo
+        </label>
+        <br>
+        <br>
+        <legend>Cookie Type?</legend>
+        <label>
+            <input type="checkbox" name="Cookie Type" value="farm salmon">
+            Farm salmon
+        </label>
+        <label>
+            <input type="checkbox" name="Cookie Type" value="wild salmon">
+            Wild salmon
+        </label>
+        <br>
+        <br>
+        <legend>Instructions:</legend>
+        <textarea name="instructions" cols="30" rows="10"></textarea>
+        <input type="submit" />
+    </form>
             </tr>
         </tfoot>
     </table>
